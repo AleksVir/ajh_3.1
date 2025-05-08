@@ -13,7 +13,6 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "http-server dist"
-    
   },
   "author": "coursar",
   "license": "MIT",
@@ -43,6 +42,8 @@
     "webpack-dev-server": "^5.2.1",
     "webpack-merge": "^6.0.1"
   },
-  "repository": "https://github.com/AleksVir/ajh_3.1"
-  
+  "repository": "https://github.com/AleksVir/ajh_3.1",
+  "dependencies": {
+    "gh-pages": "6.3.0"
+  }
 }
