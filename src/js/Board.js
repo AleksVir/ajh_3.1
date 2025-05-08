@@ -12,7 +12,7 @@ export default class Board {
     for (let i = 0; i < Math.floor(number) ** 2; i += 1) {
       const cell = document.createElement("div");
       cell.classList.add("cell");
-      board.appendChild(cell);
+      board.append(cell);
     }
     this.board = board;
   }

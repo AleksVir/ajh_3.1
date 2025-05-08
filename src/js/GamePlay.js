@@ -22,8 +22,8 @@ export default class GamePlay {
     container.classList.add("container");
     container.innerHTML = "<h1 class='title'>Goblin Battle!</h1>";
     this.counter = this.createGoblinCounter();
-    container.appendChild(this.counter);
-    container.appendChild(this.board);
+    container.append(this.counter);
+    container.append(this.board);
     body.insertBefore(container, body.firstChild);
     this.cells = [...this.board.children];
   }
@@ -82,7 +82,7 @@ export default class GamePlay {
 
   adventChar() {
     this.activeChar = this.char.getChar();
-    this.cells[this.position].appendChild(this.activeChar);
+    this.cells[this.position].append(this.activeChar);
   }
 
   resetScore() {
