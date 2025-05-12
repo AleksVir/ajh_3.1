@@ -20,6 +20,11 @@ build_script:
 test_script:
   - yarn lint && yarn test  # скрипт тестирования
 
+environment:
+  my_variable:
+    secure: KClq7zcEjt4fs+ikzV4j1wap3OIETcMEzI+20dtN5fc3Oqu8tlg9mJD37AuDTC8T
+  
+
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor
