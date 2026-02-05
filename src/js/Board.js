@@ -1,14 +1,13 @@
-/* eslint-disable prefer-const */
-/* eslint-disable no-plusplus */
 export default class Board {
   constructor() {
     this.board = null;
-    this.boardEl = document.getElementById('board');
+    this.boardEl = document.getElementById("board");
   }
 
-  initiationBoard(size) { // создание массива board
+  initiationBoard(size) {
+    // создание массива board
     const arr = [];
-    let element = '';
+    let element = "";
 
     for (let i = 0; i < size; i++) {
       arr.push([]);
@@ -31,11 +30,11 @@ export default class Board {
             data-row="${i}" 
             data-col="${j}"
             style="grid-row:${i + 1};grid-column:${j + 1};">
-            ${value || ''}
+            ${value || ""}
           </div>
         `);
       }
     }
-    this.boardEl.innerHTML = fields.join('');
+    this.boardEl.innerHTML = fields.join("");
   }
 }
